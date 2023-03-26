@@ -13,7 +13,7 @@ body{
     text-decoration:none;
 }
 
-.topbar{
+.topBar{
     width: auto;
     height: 90px;
     margin-top:20px;
@@ -25,7 +25,7 @@ body{
     grid-template-columns: 160px 1fr;
 }
 
-.topmenu{
+.topMenu{
     list-style-type:none;
     display:flex;
     padding-top: 20px;
@@ -46,4 +46,80 @@ body{
 nav{
     margin:0px;
     height: 92px;
+}
+
+.main_content_food{
+    grid-template-columns: 400px 1fr;
+    display: grid;
+    margin: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px;
+    border-color:#b4b6b8;
+}
+#main_content_foodTitle{
+    font-weight:bold;
+    font-size:20px;
+    text-align: left;
+    
+}
+#main_content_food{
+    margin-left:10px;
+    text-align: left;
+}
+
+.main_content_movie{
+    grid-template-columns: 1fr 400px;
+    display: grid;
+    margin: 20px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    border-bottom: solid 1px;
+    border-color:#b4b6b8;
+}
+#main_content_movieTitle{
+    font-weight:bold;
+    font-size:20px;
+    text-align: left;
+}
+#main_content_movie{
+    margin-left:10px;
+    text-align: left;
+}
+
+.main_content_book{
+    grid-template-columns: 400px 1fr;
+    display: grid;
+    margin: 20px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    border-bottom: solid 1px;
+    border-color:#b4b6b8;
+}
+#main_content_bookTitle{
+    font-weight:bold;
+    font-size:20px;
+    text-align: left;   
+}
+#main_content_book{
+    margin-left:10px;
+    text-align: left;
+}
+
+.main_content_study{
+    grid-template-columns: 1fr 400px;
+    display: grid;
+    margin: 20px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    border-bottom: solid 1px;
+    border-color:#b4b6b8;
+}
+#main_content_studyTitle{
+    font-weight:bold;
+    font-size:20px;
+    text-align: left;
+}
+#main_content_study{
+    margin-left:10px;
+    text-align: left;
 }
