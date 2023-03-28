@@ -32,7 +32,7 @@ body{
     font-size:24px;
 }
 
-#menu_title{
+#menu_title1, #menu_title2, #menu_title3, #menu_title4{
     color:#36454F;
     text-decoration:none;
     margin: 25px;
@@ -60,7 +60,6 @@ nav{
     font-weight:bold;
     font-size:20px;
     text-align: left;
-    
 }
 #main_content_food{
     margin-left:10px;
@@ -98,7 +97,7 @@ nav{
 #main_content_bookTitle{
     font-weight:bold;
     font-size:20px;
-    text-align: left;   
+    text-align: left;
 }
 #main_content_book{
     margin-left:10px;
