@@ -40,7 +40,7 @@ body{
 }
 
 #message_icon{
-    margin-left:auto;
+    margin-top:3px;
 }
 
 nav{
@@ -121,4 +121,20 @@ nav{
 #main_content_study{
     margin-left:10px;
     text-align: left;
+}
+
+#date{
+    vertical-align: middle;
+    font-size:14px;
+    margin-top:16px;
+    margin-left: auto;
+}
+
+
+.mode{
+    margin-left:auto;
+}
+
+#day, #night{
+    height:33px;
 }
