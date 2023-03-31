@@ -16,12 +16,7 @@
                 <li onclick="alert('공사중입니다!')"><a href="#" id="menu_title3">Book</a></li>
                 <li onclick="alert('공사중입니다!')"><a href="#" id="menu_title4">Study</a></li>
                 <a href="https://www.instagram.com/hyukm00n/" id="message_icon"><img src="paperair.png" width="28px" height="28px"></a>
-                <div id="date">
-                    <script>
-                    date = new Date().toLocaleDateString();
-                    document.write(date);
-                    </script>
-                </div>
+        <div id="topRight">
             <div class="mode">
                 <input id="day" type="button" value="day" onclick="
                 document.querySelector('body').style.backgroundColor='#E4ECE1';
@@ -34,15 +29,23 @@
                 document.querySelector('#menu_title4').style.color='#36454F';
                 ">
                 <input id="night" type="button" value="night" onclick="
-	            document.querySelector('body').style.backgroundColor='black';
-	            document.querySelector('body').style.color='#FFFFFF';
+                document.querySelector('body').style.backgroundColor='black';
+                document.querySelector('body').style.color='#FFFFFF';
                 document.querySelector('.topBar').style.borderColor='#FFFFFF';
-                document.querySelector('#logo_link').style.color='#FFFFFF';
                 document.querySelector('#menu_title1').style.color='#FFFFFF';
+                document.querySelector('#logo_link').style.color='#FFFFFF';
                 document.querySelector('#menu_title2').style.color='#FFFFFF';
                 document.querySelector('#menu_title3').style.color='#FFFFFF';
                 document.querySelector('#menu_title4').style.color='#FFFFFF';
-                ">
+                    ">
+             </div>
+                <div id="date">
+                    <script>
+                    date = new Date().toLocaleDateString();
+                    document.write(date);
+                    </script>
+                </div>
+
             </div>
             </ul>
          </nav>

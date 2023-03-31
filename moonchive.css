@@ -28,15 +28,14 @@ body{
 .topMenu{
     list-style-type:none;
     display:flex;
-    padding-top: 20px;
     font-size:24px;
+    padding-top:20px;
 }
 
 #menu_title1, #menu_title2, #menu_title3, #menu_title4{
     color:#36454F;
     text-decoration:none;
     margin: 25px;
-    margin-top:0px;
 }
 
 #message_icon{
@@ -126,15 +125,16 @@ nav{
 #date{
     vertical-align: middle;
     font-size:14px;
-    margin-top:16px;
-    margin-left: auto;
+    display:flex;
 }
 
-
-.mode{
-    margin-left:auto;
+#topRight{
+    margin-left: auto;
+    flex-direction: column;
 }
 
 #day, #night{
     height:33px;
 }
+
+
