@@ -133,8 +133,12 @@ nav{
     flex-direction: column;
 }
 
-#day, #night{
+#night_day{
+    background-color: #3a2774;
+    color:#d5a9cc;
+    width:60px;
     height:33px;
+    border:none;
+    border-radius: 26px;
+    font-weight: bold; 
 }
-
-

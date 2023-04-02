@@ -18,27 +18,34 @@
                 <a href="https://www.instagram.com/hyukm00n/" id="message_icon"><img src="paperair.png" width="28px" height="28px"></a>
         <div id="topRight">
             <div class="mode">
-                <input id="day" type="button" value="day" onclick="
-                document.querySelector('body').style.backgroundColor='#E4ECE1';
-                document.querySelector('body').style.color='#36454F';
-                document.querySelector('.topBar').style.borderColor='#36454F';
-                document.querySelector('#logo_link').style.color='#36454F';
-                document.querySelector('#menu_title1').style.color='#36454F';
-                document.querySelector('#menu_title2').style.color='#36454F';
-                document.querySelector('#menu_title3').style.color='#36454F';
-                document.querySelector('#menu_title4').style.color='#36454F';
-                ">
-                <input id="night" type="button" value="night" onclick="
-                document.querySelector('body').style.backgroundColor='black';
-                document.querySelector('body').style.color='#FFFFFF';
-                document.querySelector('.topBar').style.borderColor='#FFFFFF';
-                document.querySelector('#menu_title1').style.color='#FFFFFF';
-                document.querySelector('#logo_link').style.color='#FFFFFF';
-                document.querySelector('#menu_title2').style.color='#FFFFFF';
-                document.querySelector('#menu_title3').style.color='#FFFFFF';
-                document.querySelector('#menu_title4').style.color='#FFFFFF';
-                    ">
+                <input id="night_day" type="button" value="night" onclick="
+                if(document.querySelector('#night_day').value === 'night'){
+                    document.querySelector('body').style.backgroundColor='black';
+                    document.querySelector('body').style.color='#FFFFFF';
+                    document.querySelector('.topBar').style.borderColor='#FFFFFF';
+                    document.querySelector('#menu_title1').style.color='#FFFFFF';
+                    document.querySelector('#logo_link').style.color='#FFFFFF';
+                    document.querySelector('#menu_title2').style.color='#FFFFFF';
+                    document.querySelector('#menu_title3').style.color='#FFFFFF';
+                    document.querySelector('#menu_title4').style.color='#FFFFFF';
+                    document.querySelector('#night_day').value='day'
+                    document.querySelector('#night_day').style.backgroundColor='#d5a9cc';
+                    document.querySelector('#night_day').style.color='#3a2774';
+                }else{
+                    document.querySelector('body').style.backgroundColor='#E4ECE1';
+                    document.querySelector('body').style.color='#36454F';
+                    document.querySelector('.topBar').style.borderColor='#36454F';
+                    document.querySelector('#logo_link').style.color='#36454F';
+                    document.querySelector('#menu_title1').style.color='#36454F';
+                    document.querySelector('#menu_title2').style.color='#36454F';
+                    document.querySelector('#menu_title3').style.color='#36454F';
+                    document.querySelector('#menu_title4').style.color='#36454F';
+                    document.querySelector('#night_day').value='night';
+                    document.querySelector('#night_day').style.backgroundColor='#3a2774';
+                    document.querySelector('#night_day').style.color='#d5a9cc';
+                }">
              </div>
+
                 <div id="date">
                     <script>
                     date = new Date().toLocaleDateString();
