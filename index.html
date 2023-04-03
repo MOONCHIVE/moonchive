@@ -11,15 +11,18 @@
         </h1>
         <nav>
             <ul class="topMenu"> 
+             <div class="onlyMenu">
                 <li onclick="alert('공사중입니다!')"><a href="#" id="menu_title1">Food</a></li>
                 <li onclick="alert('공사중입니다!')"><a href="#" id="menu_title2">Moive</a></li>
                 <li onclick="alert('공사중입니다!')"><a href="#" id="menu_title3">Book</a></li>
                 <li onclick="alert('공사중입니다!')"><a href="#" id="menu_title4">Study</a></li>
                 <a href="https://www.instagram.com/hyukm00n/" id="message_icon"><img src="paperair.png" width="28px" height="28px"></a>
+             </div>
         <div id="topRight">
             <div class="mode">
                 <input id="night_day" type="button" value="night" onclick="
-                if(document.querySelector('#night_day').value === 'night'){
+                var target = document.querySelector('#night_day');
+                if(this.value === 'night'){
                     document.querySelector('body').style.backgroundColor='black';
                     document.querySelector('body').style.color='#FFFFFF';
                     document.querySelector('.topBar').style.borderColor='#FFFFFF';
@@ -28,9 +31,9 @@
                     document.querySelector('#menu_title2').style.color='#FFFFFF';
                     document.querySelector('#menu_title3').style.color='#FFFFFF';
                     document.querySelector('#menu_title4').style.color='#FFFFFF';
-                    document.querySelector('#night_day').value='day'
-                    document.querySelector('#night_day').style.backgroundColor='#d5a9cc';
-                    document.querySelector('#night_day').style.color='#3a2774';
+                    target.value='day'
+                    target.style.backgroundColor='#d5a9cc';
+                    target.style.color='#3a2774';
                 }else{
                     document.querySelector('body').style.backgroundColor='#E4ECE1';
                     document.querySelector('body').style.color='#36454F';
@@ -40,9 +43,9 @@
                     document.querySelector('#menu_title2').style.color='#36454F';
                     document.querySelector('#menu_title3').style.color='#36454F';
                     document.querySelector('#menu_title4').style.color='#36454F';
-                    document.querySelector('#night_day').value='night';
-                    document.querySelector('#night_day').style.backgroundColor='#3a2774';
-                    document.querySelector('#night_day').style.color='#d5a9cc';
+                    target.value='night';
+                    target.style.backgroundColor='#3a2774';
+                    target.style.color='#d5a9cc';
                 }">
              </div>
 

@@ -29,7 +29,13 @@ body{
     list-style-type:none;
     display:flex;
     font-size:24px;
-    padding-top:20px;
+    padding-top:10px;
+}
+
+.onlyMenu{
+    display:flex;
+    font-size:24px;
+    padding-top:10px;
 }
 
 #menu_title1, #menu_title2, #menu_title3, #menu_title4{
@@ -140,5 +146,5 @@ nav{
     height:33px;
     border:none;
     border-radius: 26px;
-    font-weight: bold; 
+    font-weight: bold;
 }
