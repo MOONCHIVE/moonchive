@@ -148,3 +148,26 @@ nav{
     border-radius: 26px;
     font-weight: bold;
 }
+
+@media(max-width:800px){
+    .onlyMenu{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .topMenu{
+        margin-top: 0px;
+        grid-template-columns: 1fr 1fr;
+    }
+    #date{
+        font-size:12px;
+    }
+    #message_icon{
+        display:none;
+    }
+    #topRight{
+        padding-top:22px;
+    }
+    img{
+        max-width: 400px;
+    }
+    }  
