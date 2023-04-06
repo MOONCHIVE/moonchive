@@ -3,6 +3,36 @@
     <meta charset="utf-8">
     <title>MOON-CHIVE</title>
     <link rel="stylesheet" href="moonchive.css">
+    <script>
+    function nightDayHandler(self){
+        var target = document.querySelector('#night_day');
+        if(self.value === 'night'){
+                document.querySelector('body').style.backgroundColor='black';
+                document.querySelector('body').style.color='#FFFFFF';
+                document.querySelector('.topBar').style.borderColor='#FFFFFF';
+                document.querySelector('#menu_title1').style.color='#FFFFFF';
+                document.querySelector('#logo_link').style.color='#FFFFFF';
+                document.querySelector('#menu_title2').style.color='#FFFFFF';
+                document.querySelector('#menu_title3').style.color='#FFFFFF';
+                document.querySelector('#menu_title4').style.color='#FFFFFF';
+                self.value='day'
+                target.style.backgroundColor='#d5a9cc';
+                target.style.color='#3a2774';
+            }else{
+                document.querySelector('body').style.backgroundColor='#E4ECE1';
+                document.querySelector('body').style.color='#36454F';
+                document.querySelector('.topBar').style.borderColor='#36454F';
+                document.querySelector('#logo_link').style.color='#36454F';
+                document.querySelector('#menu_title1').style.color='#36454F';
+                document.querySelector('#menu_title2').style.color='#36454F';
+                document.querySelector('#menu_title3').style.color='#36454F';
+                document.querySelector('#menu_title4').style.color='#36454F';
+                self.value='night';
+                target.style.backgroundColor='#3a2774';
+                target.style.color='#d5a9cc';
+                }
+    }
+    </script>
 </head>
 
 <body>
@@ -18,47 +48,19 @@
                 <li onclick="alert('공사중입니다!')"><a href="#" id="menu_title4">Study</a></li>
                 <a href="https://www.instagram.com/hyukm00n/" id="message_icon"><img src="paperair.png" width="28px" height="28px"></a>
              </div>
-        <div id="topRight">
+            <div id="topRight">
             <div class="mode">
-                <input id="night_day" type="button" value="night" onclick="
-                var target = document.querySelector('#night_day');
-                if(this.value === 'night'){
-                    document.querySelector('body').style.backgroundColor='black';
-                    document.querySelector('body').style.color='#FFFFFF';
-                    document.querySelector('.topBar').style.borderColor='#FFFFFF';
-                    document.querySelector('#menu_title1').style.color='#FFFFFF';
-                    document.querySelector('#logo_link').style.color='#FFFFFF';
-                    document.querySelector('#menu_title2').style.color='#FFFFFF';
-                    document.querySelector('#menu_title3').style.color='#FFFFFF';
-                    document.querySelector('#menu_title4').style.color='#FFFFFF';
-                    target.value='day'
-                    target.style.backgroundColor='#d5a9cc';
-                    target.style.color='#3a2774';
-                }else{
-                    document.querySelector('body').style.backgroundColor='#E4ECE1';
-                    document.querySelector('body').style.color='#36454F';
-                    document.querySelector('.topBar').style.borderColor='#36454F';
-                    document.querySelector('#logo_link').style.color='#36454F';
-                    document.querySelector('#menu_title1').style.color='#36454F';
-                    document.querySelector('#menu_title2').style.color='#36454F';
-                    document.querySelector('#menu_title3').style.color='#36454F';
-                    document.querySelector('#menu_title4').style.color='#36454F';
-                    target.value='night';
-                    target.style.backgroundColor='#3a2774';
-                    target.style.color='#d5a9cc';
-                }">
-             </div>
-
-                <div id="date">
-                    <script>
-                    date = new Date().toLocaleDateString();
-                    document.write(date);
-                    </script>
-                </div>
-
+                <input id="night_day" type="button" value="night" onclick="nightDayHandler(this);"> 
+            </div>
+            <div id="date">
+                <script>
+                date = new Date().toLocaleDateString();
+                document.write(date);
+                </script>
+            </div>
             </div>
             </ul>
-         </nav>
+        </nav>
     </div>
     <div class="main_content_food">
         <img src="food.png" width="400px">
